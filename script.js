@@ -1,9 +1,6 @@
-function generateRandomColor() {
-  const colorElement = document.querySelector('#rgb-color');
-  const randomNumber = () => Math.floor(Math.random() * 255);
-  const randomColor = `rgb(${randomNumber()}, ${randomNumber()}, ${randomNumber()})`;
+import generateRandomColor from './scripts/generateRandomColor.js';
+import createColorOptions from './scripts/createColorOptions.js';
+import getRandomColorFromOptions from './scripts/getRandomColorFromOptions.js';
 
-  colorElement.innerText = randomColor;
-}
-
-generateRandomColor();
+createColorOptions();
+getRandomColorFromOptions();
