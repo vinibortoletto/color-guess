@@ -1,4 +1,5 @@
 import generateRandomColor from './generateRandomColor.js';
+import checkColorGuess from './checkColorGuess.js';
 
 export default function createColorOptions() {
   const ballsContainer = document.querySelector('#balls-container');
@@ -8,6 +9,7 @@ export default function createColorOptions() {
     ballElement.classList = 'ball';
     ballElement.style.backgroundColor = generateRandomColor();
 
+    ballElement.onclick = checkColorGuess;
     ballsContainer.appendChild(ballElement);
   }
 }
