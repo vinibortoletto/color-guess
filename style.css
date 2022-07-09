@@ -1,3 +1,25 @@
+:root {
+  --c-darkGrey: #2c3639;
+  --c-grey: #3f4e4f;
+  --c-beige: #a27b5c;
+  --c-white: #dcd7c9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  background-color: var(--c-darkGrey);
+  color: var(--c-white);
+}
+
+#title {
+  color: var(--c-beige);
+}
+
 #balls-container {
   display: flex;
   gap: 1rem;
@@ -7,4 +29,13 @@
   width: 50px;
   height: 50px;
   cursor: pointer;
+}
+
+#rgb-color {
+  background-color: var(--c-grey);
+  color: var(--c-white);
+}
+
+#reset-game {
+  background-color: var(--c-white);
 }
